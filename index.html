@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Pemograman Web Client</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.conten { grid-area: conten; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu conten conten conten conten conten'
+    'menu footer footer footer footer footer';
+  grid-gap: 2px;
+  background-color:#424242 ;
+  padding: 2px;
+}
+
+.grid-container >div{
+  background-color: rgb(255, 255, 255);
+  padding: 25px 0;
+  font-size: 20px;
+  text-align: center;
+}
+.grid-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.header img{
+   width:10%
+}
+.footer img{
+  width:25%
+}
+.button {
+  background-color:#a0a0a0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body style="background-color:#ede7f6;">
+
+<div class="grid-container">
+  <div style="background-image: url('12.jpeg'); "class="header">
+        <p style="font-size:30px;">
+    <img src="akakom.png" style="float:left;">
+      <br>Nama : Verly Irwan Kwar
+      <br>Nim  : 145610190
+      <br>Prodi: Sistem Informasi
+    </p>
+
+  </div>
+  <div style="background-image: url('13.jpeg'); " class="menu">
+  	<button class="button">Daftar Pertemuan</button>
+    <ul>
+      <li><a href="https://github.com/YjrRahelt">Pertemuan 1.html</a></li>
+      <li><a href="">Pertemuan  2.html</a></li>
+      <li><a href="#">Pertemuan 3.html</a></li>
+      <li><a href="#">Pertemuan 3.css</a></li>
+      <li><a href="#">Pertemuan 4.html</a></li>
+      <li><a href="https://drive.google.com/file/d/1W6GrPNPZOsgU-JzxSxHF_3uSO7mvc3nL/view?usp=sharing">Pertemuan  5.html</a></li>
+      <li><a href="#">Pertemuan 6.html</a></li>
+      <li><a href="#">Pertemuan 7.html</a></li>
+      <li><a href="#">Pertemuan 8.html</a></li>
+
+    </ul>
+  </div> 
+ 
+  <div style="background-image: url('18.jpg');"style="width:500px;height:300px;" class="conten">
+      <p style="font-size:50px;">
+      <br>Responsi
+      <br>Pemograman
+      <br>Web Client</p>
+  </div>
+
+  <div style="background-image:url('11.webp');" class="footer">
+    <p style="font-size:30px;">
+    <img src="akakom.png" style="float:right;">
+      <br>Semester Genap 2019/2020
+      <br>STIMIK AkaKom
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
